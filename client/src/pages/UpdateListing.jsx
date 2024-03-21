@@ -203,7 +203,7 @@ export default function UpdateListing() {
             id='address'
             required
             onChange={handleChange}
-            value={formData.address}
+            value={formData.address || " "}
           />
           <div className='flex gap-6 flex-wrap'>
             <div className='flex gap-2'>
