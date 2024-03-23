@@ -1,10 +1,5 @@
 import { useEffect, useState } from 'react';
-import {
-  getDownloadURL,
-  getStorage,
-  ref,
-  uploadBytesResumable,
-} from 'firebase/storage';
+import {getDownloadURL,getStorage,ref,uploadBytesResumable} from 'firebase/storage';
 import { app } from '../firebase';
 import { useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
@@ -378,7 +373,7 @@ export default function UpdateListing() {
           >
             {loading ? 'Updating...' : 'Update listing'}
           </button>
-          {error && <p className='text-red-700 text-sm'>{error}</p>}
+          {<p>Your Listing has been updated after clicking "Update Listing"</p>}
         </div>
       </form>
     </main>

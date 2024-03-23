@@ -48,16 +48,16 @@ const Header = () => {
         </form>
         <ul>
             <Link to='/'>
-            <li className='hidden sm:inline text-slate-700 hover:underline'>Home</li>
+            <li className='hidden sm:inline text-slate-700 hover:bg-slate-700 hover:text-white mx-3 border-solid border-2 border-slate-700 rounded-2xl p-3'>Home</li>
             </Link>
             <Link to='/about'>
-            <li className='hidden sm:inline text-slate-700 hover:underline'>About</li>
+            <li className='hidden sm:inline text-slate-700 hover:bg-slate-700 hover:text-white mx-3 border-solid border-2 border-slate-700 rounded-2xl p-3'>About</li>
             </Link>
 
             <Link to='/profile'>
             {currentUser ? (
               <img className='rounded-full h-7 w-7 object-cover ' src={currentUser.avatar} alt="profile" />
-            ): (<li className='text-slate-700 hover:underline'>SignIn</li>
+            ): (<li className='text-slate-700 hover:bg-slate-700 hover:text-white sm:inline mx-3 border-solid border-2 border-slate-700 rounded-2xl p-3'>SignIn</li>
           )}
           </Link>
 
