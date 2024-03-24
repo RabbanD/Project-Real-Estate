@@ -6,7 +6,7 @@ function Footer() {
 
     {/* <!--Copyright section--> */}
     <div
-      className="bg-slate-200 p-4 text-center text-slate-700 dark:bg-neutral-700 dark:text-neutral-200">
+      className="bg-amber-200 p-4 text-center text-slate-700 dark:bg-neutral-700 dark:text-neutral-200">
       &copy; All Rights Reserved 2024.
       <a
         className="text-neutral-800 dark:text-neutral-400"

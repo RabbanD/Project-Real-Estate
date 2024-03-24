@@ -24,7 +24,7 @@ const Header = () => {
     }
   },[location.search]);
   return (
-    <header className='bg-slate-200 shadow-md'>
+    <header className='bg-amber-200 shadow-md'>
         <div className='flex justify-between items-center max-w-6xl mx-auto p-3'>
         <Link to='/'>
         <h1 className='font-bold text-sm sm:text-xl flex flex-wrap'>
@@ -48,16 +48,16 @@ const Header = () => {
         </form>
         <ul>
             <Link to='/'>
-            <li className='hidden sm:inline text-slate-700 hover:bg-slate-700 hover:text-white mx-3 border-solid border-2 border-slate-700 rounded-2xl p-3'>Home</li>
+            <li className='hidden sm:inline text-slate-700 hover:bg-slate-700 hover:text-white mx-2 border-solid border-2 border-slate-700 rounded-2xl p-2'>Home</li>
             </Link>
             <Link to='/about'>
-            <li className='hidden sm:inline text-slate-700 hover:bg-slate-700 hover:text-white mx-3 border-solid border-2 border-slate-700 rounded-2xl p-3'>About</li>
+            <li className='hidden sm:inline text-slate-700 hover:bg-slate-700 hover:text-white mx-2 border-solid border-2 border-slate-700 rounded-2xl p-2'>About</li>
             </Link>
 
             <Link to='/profile'>
             {currentUser ? (
               <img className='rounded-full h-7 w-7 object-cover ' src={currentUser.avatar} alt="profile" />
-            ): (<li className='text-slate-700 hover:bg-slate-700 hover:text-white sm:inline mx-3 border-solid border-2 border-slate-700 rounded-2xl p-3'>SignIn</li>
+            ): (<li className='text-slate-700 hover:bg-slate-700 hover:text-white sm:inline mx-2 border-solid border-2 border-slate-700 rounded-2xl p-2'>SignIn</li>
           )}
           </Link>
 
